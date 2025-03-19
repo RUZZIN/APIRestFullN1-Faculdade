@@ -32,12 +32,16 @@ public class Consulta {
 	@JoinColumn(name = "paciente_id", nullable = false)
 	private Medico medico;
 	
-	public Consulta(Integer id, String data, String horario, Paciente paciente, Medico medico) {
+	@Column(nullable = false)
+    private String status;
+	
+	public Consulta(Integer id, String status, String data, String horario, Paciente paciente, Medico medico) {
 		this.id = id;
 		this.data = data;
 		this.horario = horario;
 		this.paciente = paciente;
 		this.medico = medico;
+		this.status = status;
 	}
 
 	public Integer getId() {
@@ -79,4 +83,12 @@ public class Consulta {
 	public void setMedico(Medico medico) {
 		this.medico = medico;
 	}
+	
+	public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }
