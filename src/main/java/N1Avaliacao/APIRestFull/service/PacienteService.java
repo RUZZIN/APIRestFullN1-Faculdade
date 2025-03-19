@@ -10,7 +10,7 @@ import java.util.Optional;
 @Service
 public class PacienteService {
 
-    private final PacienteRepository pacienteRepository;
+    private PacienteRepository pacienteRepository;
 
     public PacienteService(PacienteRepository pacienteRepository) {
         this.pacienteRepository = pacienteRepository;

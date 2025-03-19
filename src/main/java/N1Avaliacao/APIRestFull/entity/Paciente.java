@@ -27,8 +27,10 @@ public class Paciente {
 	@Column(name = "telefone", nullable = false, length = 100)
 	private String telefone;
 	
-	public Paciente(Integer id, String nome, String cpf, String dataNascimento, String telefone) {
-		this.id = id;
+	public Paciente() {
+	}
+	
+	public Paciente(String nome, String cpf, String dataNascimento, String telefone) {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.dataNascimento = dataNascimento;

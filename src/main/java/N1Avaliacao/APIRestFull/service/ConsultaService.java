@@ -14,9 +14,9 @@ import java.util.Optional;
 @Service
 public class ConsultaService {
 
-    private final ConsultaRepository consultaRepository;
-    private final MedicoRepository medicoRepository;
-    private final PacienteRepository pacienteRepository;
+    private ConsultaRepository consultaRepository;
+    private MedicoRepository medicoRepository;
+    private PacienteRepository pacienteRepository;
 
     public ConsultaService(ConsultaRepository consultaRepository, MedicoRepository medicoRepository, PacienteRepository pacienteRepository) {
         this.consultaRepository = consultaRepository;

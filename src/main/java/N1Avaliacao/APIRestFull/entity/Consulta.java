@@ -35,8 +35,10 @@ public class Consulta {
 	@Column(nullable = false)
     private String status;
 	
-	public Consulta(Integer id, String status, String data, String horario, Paciente paciente, Medico medico) {
-		this.id = id;
+	public Consulta() {
+	}
+	
+	public Consulta(String status, String data, String horario, Paciente paciente, Medico medico) {
 		this.data = data;
 		this.horario = horario;
 		this.paciente = paciente;
